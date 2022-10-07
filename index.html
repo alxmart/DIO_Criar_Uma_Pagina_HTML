@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <style>
+      body {
+        background-color: rgb(247, 247, 242);
+      }
+      h1 {
+        color: blue;
+      }
+      h2 {
+        color: blue;
+      }
+      del {
+        background-color: green;
+        color: white;
+      }
+      ins {
+        background-color: darkblue;
+        color: white;
+      }
+      #font {
+        color: red;
+        font-weight: bold;
+        font-size: larger;
+      }
+    </style>
 </head>
 <body>
     <h1 id="top">Módulo 1 - Primeiros Passos com HTML</h1>
@@ -15,9 +39,9 @@
         <li><a href="#historia">História dos computadores</a></li>
         <li><a href="#clients">O que são <i>Clients</i>?</a></li>
         <li><a href="#servers">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#basic">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#lists">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
     </ul>      
     <hr/>
 
@@ -63,7 +87,7 @@
     <small><a href="#top">Voltar ao Início</a></small>
     <hr/>
 
-    <h2>O que são <i>Servers</i>?</h2>
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
     <p> Em uma arquitetura <i>Client - Server</i> podemos entender o servidor com um equipamento
         (servidor) ou sistema que fornece recursos (ou serviços) para o <i>Client</i> de acordo com as
         requisições realizadas. <br>
@@ -86,24 +110,107 @@
     <hr/>
 
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="basic">Como é uma estrutura básica de um HTML?</h2>
+    <p> Posso citar uma lista de tags que podemos usar para definir uma estrutura básica de um
+      HTML: <br>
+      <ol>
+        <li> html: Define o início e fim do conteúdo HTML.</li>
+        <li> head: utilizado para definir, por exemplo o título que aparece na aba do browser.</li>
+        <li> h1,h2,h3,h4,h5,h6: Usados para sub-títulos. H1 é a maior e H6 a menor.</li>
+        <li> body: Contém toda a parte do HTML que será visível ao carregar a página.</li>
+        <li> p: TRata-se do parágrafo. Escrevemos textos mais longos nesta tag.</li>
+        <li> img: Tag usada para apresentar uma imagem, podendo ela estar local ou na Internet.</li>
+        <li> a: Anchor . Usada para acesar links externos (Internet) ou posições dentro da
+           própria página.</li>
+        <li> strong: Coloca em negrito e também coloca ênfase em leitores de páginas com áudio.</li>
+        <li> i: Usado para colocar em itálico. </li>
+        <li> ol: Define uma lista como ordenada. (numerada).</li>
+        <li> ul: Define uma lista não ordenada.</li>
+        <li> li: Define cada item dentro de uma lista ordenada ou não ordenada.</li>
+        <li> hr: Cria uma linha reta atuando com separador entre partes da página </li>
+        <li> br: Faz pular uma linha. Usado para adicionar linhas de espaços. </li>
+      </ol> <br>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+         Outras tags não tão básicas mas que valem a lembrança são:
+         
+         
+         del: Usada para marcar texto deletado.<br>
+         Exemplo:  Minha cor favorita é 
+         <del>verde.</del> <ins>azul escuro.</ins><br><br>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+         <p id="font">
+          font: Esta tag foi usada no HTML4. Não é suportada no HTML5.<br>
+         Era usada para definir font size, cor do texto e font-face. <br>
+         Seu uso foi substituído pelo CSS.
+         </p>
+      <br>
+      Posso sugerir a leitura de uma página interessante da
+       <abbr title="Mozilla Developer Network">MDN</abbr> sobre HTML básico. Veja nas
+      referências abaixo.
+
+      <u>Referências:</u> <br><br>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics"
+         title="MDN - HTML Básico"
+         target="_blank"> HTML Básico</a> <br>
+
+      <a href="https://www.youtube.com/watch?v=90kC1YLNF3U"
+         title="Structure of an HTML Page"
+         target="_blank">Structure of an HTML Page</a> <br> 
+ </p>       
+
+ <small><a href="#top">Voltar ao Início</a></small>
+ <hr/>
+    </p>
+
+
+    <h2 id="lists">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+
+    <p> Listas ordenadas são itens mostrados em forma de lista, sendo eles numerados.<br>
+        Já as listas não ordenadas são mostradas como "tópicos", iniciando com uma marcação de 
+        um ícone como um círculo.
+        Através do CSS podemos alterar os símbolos ou números que precedem cada item da lista.<br><br>
+
+        <mark><strong>Lista Ordenada:</strong></mark><br>
+        <ol>
+          <li>Banana</li>
+          <li>Maçã</li>
+          <li>Laranja</li>
+        </ol>
+        <br>
+
+        <mark><strong>Lista Não Ordenada:</strong></mark><br>
+        <ol>
+          <li>Brócolis</li>
+          <li>Cebola</li>
+          <li>Tomate</li>
+        </ol>       
+      
+         <u>Referências:</u> <br><br>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+             title="<ol>: The Ordered List element"
+             target="_blank"> The Ordered List element</a> <br>
+
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+             title="<ul>: The Unordered List element"
+             target="_blank"> The Unordered List element</a> <br><br>
+     
+        <small><a href="#top">Voltar ao Início</a></small>
+        <hr/>
+    </p>
+
+    <h2 id="links">Links de referências</h2>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="https://www.dio.me/en"
+               target="_blank">Dio.me</a></li>
+        <li><a href="https://www.w3.org/" 
+               target="_blank">World Wide Web Consortium (W3C)</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/"
+               target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/tags/default.asp" 
+               target="_blank">HTML Element Reference</a></li>
     </ul>
+
+    <small><a href="#top">Voltar ao Início</a></small>
 
 </body>
 </html>
